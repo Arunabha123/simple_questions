@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple Questions</string>
+    <string name="question1">1. Did you enjoy going to school?</string>
+    <string name="question2">2. Do you enjoy spending time with your family?</string>
+    <string name="question3">3. Do you believe in God?</string>
+    <string name="question4">4. Do you believe in aliens?</string>
+    <string name="question5">5. Do you enjoy drinking coffee?</string>
+    <string name="strNo">No</string>
+    <string name="strYes">Yes</string>
+    <string name="save">Save</string>
+</resources>

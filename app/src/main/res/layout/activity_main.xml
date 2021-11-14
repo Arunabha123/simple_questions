@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickHandler"
+            type="com.app.simplequestions.modules.viewmodels.AnswerViewModel.AnswerClickHandlers" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp"
+        tools:context=".modules.views.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_med" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:checkedButton="@id/rdYes1"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rdYes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(0, true)}"
+                        android:gravity="center_vertical"
+                        android:text="@string/strYes"
+                        android:textSize="@dimen/text_small" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(0, false)}"
+                        android:layout_marginStart="@dimen/margin_med"
+                        android:gravity="center_vertical"
+                        android:text="@string/strNo"
+                        android:textSize="@dimen/text_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_med"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question2"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_med" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:checkedButton="@id/rdYes2"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rdYes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(1, true)}"
+                        android:gravity="center_vertical"
+                        android:text="@string/strYes"
+                        android:textSize="@dimen/text_small" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(1, false)}"
+                        android:layout_marginStart="@dimen/margin_med"
+                        android:gravity="center_vertical"
+                        android:text="@string/strNo"
+                        android:textSize="@dimen/text_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_med"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_med" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:checkedButton="@id/rdYes3"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rdYes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(2, true)}"
+                        android:gravity="center_vertical"
+                        android:text="@string/strYes"
+                        android:textSize="@dimen/text_small" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(2, false)}"
+                        android:layout_marginStart="@dimen/margin_med"
+                        android:gravity="center_vertical"
+                        android:text="@string/strNo"
+                        android:textSize="@dimen/text_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_med"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_med" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:checkedButton="@id/rdYes4"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rdYes4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(3, true)}"
+                        android:gravity="center_vertical"
+                        android:text="@string/strYes"
+                        android:textSize="@dimen/text_small" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(3, false)}"
+                        android:layout_marginStart="@dimen/margin_med"
+                        android:gravity="center_vertical"
+                        android:text="@string/strNo"
+                        android:textSize="@dimen/text_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_med"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question5"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_med" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:checkedButton="@id/rdYes5"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rdYes5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(4, true)}"
+                        android:gravity="center_vertical"
+                        android:text="@string/strYes"
+                        android:textSize="@dimen/text_small" />
+
+                    <RadioButton
+                        android:id="@+id/rdNo5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> clickHandler.onAnswerClicked(4, false)}"
+                        android:layout_marginStart="@dimen/margin_med"
+                        android:gravity="center_vertical"
+                        android:text="@string/strNo"
+                        android:textSize="@dimen/text_small" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:onClick="@{clickHandler::onSaveClicked}"
+                android:backgroundTint="@color/teal_200"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/save"
+                app:cornerRadius="@dimen/_8sdp"
+                app:elevation="@dimen/_4sdp" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
