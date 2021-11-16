@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorText">#272424</color>
 
-    <color name="colorAccent">#EC407A</color>
+    <color name="colorAccent">#08C8B6</color>
+    <color name="colorGradStart">#5C6BC0</color>
+    <color name="colorGradEnd">#5FFBF1</color>
 </resources>
