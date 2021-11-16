@@ -18,6 +18,6 @@ public interface AnswerDao {
     @Update
     void updateData(List<Answer> answers);
 
-    @Query("SELECT * FROM table_answers ORDER BY question_no DESC")
+    @Query("SELECT * FROM table_answers ORDER BY question_no ASC")
     LiveData<List<Answer>> getAllAnswers();
 }

@@ -14,7 +14,7 @@ public abstract class SimpleQuestionDatabase extends RoomDatabase {
 
     private static SimpleQuestionDatabase instance;
 
-    public abstract AnswerDao noteDao();
+    public abstract AnswerDao answerDao();
 
     public static synchronized SimpleQuestionDatabase getInstance(Context context) {
         if (instance == null) {

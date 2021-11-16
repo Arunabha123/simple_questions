@@ -4,6 +4,7 @@
     <dimen name="text_med">@dimen/_14sdp</dimen>
     <dimen name="text_small">@dimen/_12sdp</dimen>
 
+    <dimen name="margin_xlarge">@dimen/_16sdp</dimen>
     <dimen name="margin_large">@dimen/_10sdp</dimen>
     <dimen name="margin_med">@dimen/_8sdp</dimen>
     <dimen name="margin_small">@dimen/_5sdp</dimen>

@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.app.simplequestions.R;
 import com.app.simplequestions.databinding.ActivityMainBinding;
@@ -33,24 +34,24 @@ public class MainActivity extends AppCompatActivity {
             if(answers != null && answers.size() > 0) {
                 answerViewModel.setUpdatedAnswers(answers);
                 for (int i = 0; i < answers.size(); i++) {
-                    switch (i) {
-                        case 0:
+                    switch (answers.get(i).getQuestionNo()) {
+                        case 1:
                             if (answers.get(i).isAnswer()) binding.rdYes1.setChecked(true);
                             else binding.rdNo1.setChecked(true);
                             break;
-                        case 1:
+                        case 2:
                             if (answers.get(i).isAnswer()) binding.rdYes2.setChecked(true);
                             else binding.rdNo2.setChecked(true);
                             break;
-                        case 2:
+                        case 3:
                             if (answers.get(i).isAnswer()) binding.rdYes3.setChecked(true);
                             else binding.rdNo3.setChecked(true);
                             break;
-                        case 3:
+                        case 4:
                             if (answers.get(i).isAnswer()) binding.rdYes4.setChecked(true);
                             else binding.rdNo4.setChecked(true);
                             break;
-                        case 4:
+                        case 5:
                             if (answers.get(i).isAnswer()) binding.rdYes5.setChecked(true);
                             else binding.rdNo5.setChecked(true);
                             break;

@@ -9,20 +9,19 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.app.simplequestions.modules.entities.Answer;
-import com.app.simplequestions.modules.repositories.AnswersRespository;
+import com.app.simplequestions.modules.repositories.AnswersRepository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class AnswerViewModel extends AndroidViewModel {
-    private AnswersRespository repository;
-    private LiveData<List<Answer>> answers;
+    private final AnswersRepository repository;
+    private final LiveData<List<Answer>> answers;
     private List<Answer> updatedAnswers;
 
     public AnswerViewModel(@NonNull Application application) {
         super(application);
-        repository = new AnswersRespository(application);
+        repository = new AnswersRepository(application);
         answers = repository.getAllAnswers();
         updatedAnswers = new ArrayList<>();
         for(int i = 0; i < 5; i++) {
@@ -56,8 +55,12 @@ public class AnswerViewModel extends AndroidViewModel {
         }
 
         public void onSaveClicked(View view) {
-            if(answers.getValue() == null || answers.getValue().size() == 0) insert();
-            else update();
+            if(answers.getValue() == null || answers.getValue().size() == 0) {
+                insert();
+            }
+            else {
+                update();
+            }
             Toast.makeText(view.getContext(), "Answers Saved", Toast.LENGTH_SHORT).show();
         }
     }

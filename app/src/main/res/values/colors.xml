@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorText">#272424</color>
+
+    <color name="colorCrimson">#C2185B</color>
 </resources>

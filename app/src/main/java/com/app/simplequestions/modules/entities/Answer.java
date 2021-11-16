@@ -1,5 +1,6 @@
 package com.app.simplequestions.modules.entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -30,5 +31,14 @@ public class Answer {
 
     public void setAnswer(boolean answer) {
         this.answer = answer;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "questionNo=" + questionNo +
+                ", answer=" + answer +
+                '}';
     }
 }
