@@ -346,7 +346,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin_large"
             android:layout_marginBottom="@dimen/margin_med"
-            android:backgroundTint="@color/colorCrimson"
+            android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/oxygen_bold"
             android:onClick="@{clickHandler::onSaveClicked}"
             android:padding="@dimen/_10sdp"
